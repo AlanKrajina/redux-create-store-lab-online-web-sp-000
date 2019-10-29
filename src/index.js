@@ -5,7 +5,7 @@ function createStore(candyReducer){
 
   function dispatch(action) {            // updates and creates new state
     state = candyReducer(state, action);   // ----> OVDJE SE REDUCER POKRECE i returna i sejva novo state u state
-    render();                         // ----> spaja sa HTML,mjenja text HTMLa 
+    render();                         // ----> spaja sa HTML,mjenja text HTMLa
   }
 
   function getState() {              // returns current state
@@ -13,9 +13,9 @@ function createStore(candyReducer){
   };
 
   return {
-    dispatch,                      
-    getState                     
-  };  
+    dispatch,
+    getState
+  };
 }
 
 
